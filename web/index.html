@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenXS Paper — Live Wallpaper Engine</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">OpenXS Paper</span>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#how">How it works</a>
+      <a href="https://github.com/shirushimori/openxs-paper" target="_blank" class="btn-ghost">GitHub ↗</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Live Video Wallpapers<br><span class="accent">for your desktop.</span></h1>
+      <p class="hero-sub">
+        OpenXS Paper plays any MP4, MKV, AVI or WebM video directly on your desktop —
+        looping seamlessly with zero flicker, zero bloat.
+      </p>
+      <div class="hero-actions">
+        <a href="#install" class="btn-primary">Get Started</a>
+        <a href="https://github.com/shirushimori/openxs-paper" target="_blank" class="btn-outline">View on GitHub</a>
+      </div>
+    </div>
+    <div class="hero-badge">
+      <div class="badge-pill">Python 3.12 · PyQt6 · OpenCV</div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <h2>Features</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">🎬</div>
+        <h3>Live Video Wallpaper</h3>
+        <p>Renders directly on the Windows desktop layer (WorkerW) — sits behind all windows, just like a real wallpaper.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Zero-Flicker Loop</h3>
+        <p>Ping-pong double-buffer: two players swap instantly at the loop point. No black frame, no seek stutter — ever.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🖼️</div>
+        <h3>Visual Dashboard</h3>
+        <p>Thumbnail grid of all your wallpapers. Ctrl+Scroll to zoom. Drag & drop files or folders straight in.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💾</div>
+        <h3>Persistent State</h3>
+        <p>Remembers your last wallpaper, last folder, mute/loop state, and full dashboard across every restart.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔔</div>
+        <h3>System Tray</h3>
+        <p>Minimize to tray, restore with a double-click. Quick mute, loop toggle, and quit from the tray menu.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h3>Settings</h3>
+        <p>Auto-start with Windows, multi-monitor target, mute and loop defaults — all in one clean dialog.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section id="install" class="section section-dark">
+    <h2>Install</h2>
+    <p class="section-sub">One command. The script handles Python, venv, and all dependencies automatically.</p>
+
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-tab="windows">Windows</button>
+      <button class="tab" data-tab="linux">Linux</button>
+      <button class="tab" data-tab="macos">macOS</button>
+      <button class="tab" data-tab="manual">Manual</button>
+    </div>
+
+    <div class="tab-content active" id="tab-windows">
+      <p class="tab-note">Requires <strong>winget</strong> (built into Windows 11) or <strong>Chocolatey</strong>. Python 3.12 is installed automatically if missing.</p>
+      <div class="code-block">
+        <pre id="cmd-windows">git clone https://github.com/shirushimori/openxs-paper.git &amp;&amp; cd openxs-paper &amp;&amp; start.bat</pre>
+        <button class="copy-btn" data-target="cmd-windows">Copy</button>
+      </div>
+      <p class="tab-note muted">Or just download the repo as a ZIP, extract it, and double-click <code>start.bat</code>.</p>
+    </div>
+
+    <div class="tab-content" id="tab-linux">
+      <p class="tab-note">Supports <strong>apt</strong> (Ubuntu/Debian), <strong>pacman</strong> (Arch), <strong>dnf</strong> (Fedora). Python 3.12 is installed automatically if missing.</p>
+      <div class="code-block">
+        <pre id="cmd-linux">git clone https://github.com/shirushimori/openxs-paper.git && cd openxs-paper && chmod +x start.sh && ./start.sh</pre>
+        <button class="copy-btn" data-target="cmd-linux">Copy</button>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-macos">
+      <p class="tab-note">Requires <strong>Homebrew</strong>. Python 3.12 is installed automatically via <code>brew install python@3.12</code>.</p>
+      <div class="code-block">
+        <pre id="cmd-macos">git clone https://github.com/shirushimori/openxs-paper.git && cd openxs-paper && chmod +x start.sh && ./start.sh</pre>
+        <button class="copy-btn" data-target="cmd-macos">Copy</button>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-manual">
+      <p class="tab-note">If you prefer to set things up yourself:</p>
+      <div class="code-block">
+        <pre id="cmd-manual">git clone https://github.com/shirushimori/openxs-paper.git
+cd openxs-paper
+python3.12 -m venv .venv
+
+# Windows
+.venv\Scripts\pip install -r requirements.txt
+.venv\Scripts\python main.py
+
+# Linux / macOS
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python main.py</pre>
+        <button class="copy-btn" data-target="cmd-manual">Copy</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section">
+    <h2>How it works</h2>
+    <div class="how-grid">
+
+      <div class="how-item">
+        <div class="how-num">01</div>
+        <div>
+          <h3>Desktop Embedding</h3>
+          <p>
+            Windows has a hidden <code>WorkerW</code> window between the desktop icons and the wallpaper layer.
+            OpenXS Paper sends a <code>0x052C</code> message to <code>Progman</code> to expose it,
+            then re-parents the PyQt6 video widget into it — so the video renders as the actual desktop background.
+          </p>
+        </div>
+      </div>
+
+      <div class="how-item">
+        <div class="how-num">02</div>
+        <div>
+          <h3>Ping-Pong Double Buffer</h3>
+          <p>
+            Two <code>QMediaPlayer</code> instances (A and B) are stacked on the same screen rect.
+            While A plays, B is pre-loaded and waiting. When A hits <em>EndOfMedia</em>, B is raised
+            and plays instantly — no seek, no reload, no black frame. Then A reloads in the background
+            ready for the next swap.
+          </p>
+        </div>
+      </div>
+
+      <div class="how-item">
+        <div class="how-num">03</div>
+        <div>
+          <h3>Thumbnail Cache</h3>
+          <p>
+            OpenCV grabs the first frame of each video, resizes it, and saves it as a
+            <code>.jpg</code> in <code>assets/cache/</code>. On subsequent launches the cache
+            is reused so the dashboard loads instantly regardless of how many wallpapers you have.
+          </p>
+        </div>
+      </div>
+
+      <div class="how-item">
+        <div class="how-num">04</div>
+        <div>
+          <h3>Persistent Config</h3>
+          <p>
+            All state is written to <code>config/settings.json</code> — last wallpaper, last folder,
+            full dashboard list, mute/loop state, and settings dialog values.
+            Everything is restored exactly as you left it on next launch.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>OpenXS Paper · MIT License · <a href="https://github.com/shirushimori/openxs-paper" target="_blank">github.com/shirushimori/openxs-paper</a></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
