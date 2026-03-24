@@ -4,6 +4,8 @@ so basically this is a live wallpaper app i made with Python and PyQt6. you pick
 
 works on Windows fully. Linux and macOS can run the app but the desktop embedding part is windows only (more on that below).
 
+![OpenXS Paper Dashboard](assets/RepresentationImages/app.png)
+
 ---
 
 ## what it does
@@ -107,6 +109,8 @@ python3.12 -m venv .venv
 | minimize to tray | click the X button (doesnt close, goes to tray) |
 | bring it back | double click the tray icon |
 | actually quit | tray right click → Quit, or File → Exit |
+
+![Settings Dialog](assets/RepresentationImages/settings.png)
 
 ---
 
