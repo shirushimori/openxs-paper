@@ -35,7 +35,7 @@ works on Windows fully. Linux and macOS can run the app but the desktop embeddin
 | PyQt6-sip | 13.8.0 |
 | opencv-python | 4.10.0.84 |
 
-dont worry about installing these manually, the start scripts handle everything.
+dont worry about installing these manually, the start scripts handle everything. may be it fails try manual way.
 
 ---
 
