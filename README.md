@@ -4,6 +4,10 @@ so basically this is a live wallpaper app i made with Python and PyQt6. you pick
 
 works on Windows fully. Linux and macOS can run the app but the desktop embedding part is windows only (more on that below).
 
+#Required
+**GIT** - "https://git-scm.com/install/windows".... And figure out Solutions of Problems you find.
+
+
 ![OpenXS Paper Dashboard](assets/RepresentationImages/app.png)
 
 ---
