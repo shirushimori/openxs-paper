@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
+
 <head>
   <!-- ── Charset & viewport ─────────────────────────────────────── -->
   <meta charset="UTF-8" />
@@ -7,28 +8,34 @@
 
   <!-- ── Primary SEO ───────────────────────────────────────────── -->
   <title>OpenXS Paper — Live Video Wallpaper Engine by Shirushi Mori</title>
-  <meta name="description" content="OpenXS Paper is a free open-source live wallpaper engine by Shirushi Mori. Play any MP4, MKV or WebM video as your Windows desktop wallpaper. Zero flicker, system tray, dark UI. Built with Python and PyQt6." />
-  <meta name="keywords" content="shirushi mori wallpaper, shirushi mori, openxs paper, live wallpaper engine, video wallpaper windows, animated wallpaper, desktop wallpaper app, python wallpaper engine, PyQt6 wallpaper, free wallpaper engine, open source wallpaper, openxs, live desktop background" />
+  <meta name="description"
+    content="OpenXS Paper is a free open-source live wallpaper engine by Shirushi Mori. Play any MP4, MKV or WebM video as your Windows desktop wallpaper. Zero flicker, system tray, dark UI. Built with Python and PyQt6." />
+  <meta name="keywords"
+    content="shirushi mori wallpaper, shirushi mori, openxs paper, live wallpaper engine, video wallpaper windows, animated wallpaper, desktop wallpaper app, python wallpaper engine, PyQt6 wallpaper, free wallpaper engine, open source wallpaper, openxs, live desktop background" />
   <meta name="author" content="Shirushi Mori" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://shirushimori.github.io/openxs-paper/" />
 
   <!-- ── Open Graph (Facebook, Discord, LinkedIn previews) ─────── -->
-  <meta property="og:type"        content="website" />
-  <meta property="og:url"         content="https://shirushimori.github.io/openxs-paper/" />
-  <meta property="og:title"       content="OpenXS Paper — Live Video Wallpaper Engine by Shirushi Mori" />
-  <meta property="og:description" content="Free open-source live wallpaper engine by Shirushi Mori. Set any video as your Windows desktop wallpaper with zero flicker looping." />
-  <meta property="og:image"       content="https://shirushimori.github.io/openxs-paper/../assets/RepresentationImages/app.png" />
-  <meta property="og:image:alt"   content="OpenXS Paper dashboard screenshot" />
-  <meta property="og:site_name"   content="OpenXS Paper" />
-  <meta property="og:locale"      content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shirushimori.github.io/openxs-paper/" />
+  <meta property="og:title" content="OpenXS Paper — Live Video Wallpaper Engine by Shirushi Mori" />
+  <meta property="og:description"
+    content="Free open-source live wallpaper engine by Shirushi Mori. Set any video as your Windows desktop wallpaper with zero flicker looping." />
+  <meta property="og:image"
+    content="https://shirushimori.github.io/openxs-paper/../assets/RepresentationImages/app.png" />
+  <meta property="og:image:alt" content="OpenXS Paper dashboard screenshot" />
+  <meta property="og:site_name" content="OpenXS Paper" />
+  <meta property="og:locale" content="en_US" />
 
   <!-- ── Twitter / X card ──────────────────────────────────────── -->
-  <meta name="twitter:card"        content="summary_large_image" />
-  <meta name="twitter:title"       content="OpenXS Paper — Live Video Wallpaper by Shirushi Mori" />
-  <meta name="twitter:description" content="Free open-source live wallpaper engine. Play any video as your Windows desktop background. Zero flicker, dark UI, system tray." />
-  <meta name="twitter:image"       content="https://shirushimori.github.io/openxs-paper/../assets/RepresentationImages/app.png" />
-  <meta name="twitter:creator"     content="@shirushimori" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OpenXS Paper — Live Video Wallpaper by Shirushi Mori" />
+  <meta name="twitter:description"
+    content="Free open-source live wallpaper engine. Play any video as your Windows desktop background. Zero flicker, dark UI, system tray." />
+  <meta name="twitter:image"
+    content="https://shirushimori.github.io/openxs-paper/../assets/RepresentationImages/app.png" />
+  <meta name="twitter:creator" content="@shirushimori" />
 
   <!-- ── Structured data (JSON-LD) — helps Google understand the page ── -->
   <script type="application/ld+json">
@@ -65,6 +72,7 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -90,8 +98,12 @@
       </p>
       <div class="hero-actions">
         <a href="#install" class="btn-primary">Get Started</a>
-        <a href="https://github.com/shirushimori/openxs-paper" target="_blank" class="btn-outline">View on GitHub</a>
+        <a href="https://github.com/shirushimori/openxs-paper" target="_blank" class="btn-outline">View on GitHub (For MAC/Linux)</a>
+        <a href="https://github.com/shirushimori/openxs-paper/releases/download/main/OpenXSwPaper.exe" target="_blank"
+          rel="noopener noreferrer"><button class="btn-primary" style="height: 50px;">Download EXE</button></a>
+
       </div>
+
     </div>
     <div class="hero-badge">
       <div class="badge-pill">Python 3.12 · PyQt6 · OpenCV</div>
@@ -120,12 +132,14 @@
       <div class="card">
         <div class="card-icon">🎬</div>
         <h3>Live Video Wallpaper</h3>
-        <p>Renders directly on the Windows desktop layer (WorkerW) — sits behind all windows, just like a real wallpaper.</p>
+        <p>Renders directly on the Windows desktop layer (WorkerW) — sits behind all windows, just like a real
+          wallpaper.</p>
       </div>
       <div class="card">
         <div class="card-icon">⚡</div>
         <h3>Zero-Flicker Loop</h3>
-        <p>Ping-pong double-buffer: two players swap instantly at the loop point. No black frame, no seek stutter — ever.</p>
+        <p>Ping-pong double-buffer: two players swap instantly at the loop point. No black frame, no seek stutter —
+          ever.</p>
       </div>
       <div class="card">
         <div class="card-icon">🖼️</div>
@@ -163,26 +177,36 @@
     </div>
 
     <div class="tab-content active" id="tab-windows">
-      <p class="tab-note">Requires <strong>winget</strong> (built into Windows 11) or <strong>Chocolatey</strong>. Python 3.12 is installed automatically if missing.</p>
+      <p class="tab-note">Requires <strong>winget</strong> (built into Windows 11) or <strong>Chocolatey</strong>.
+        Python 3.12 is installed automatically if missing.</p>
       <div class="code-block">
-        <pre id="cmd-windows">git clone https://github.com/shirushimori/openxs-paper.git &amp;&amp; cd openxs-paper &amp;&amp; start.bat</pre>
+        <pre
+          id="cmd-windows">git clone https://github.com/shirushimori/openxs-paper.git &amp;&amp; cd openxs-paper &amp;&amp; start.bat</pre>
         <button class="copy-btn" data-target="cmd-windows">Copy</button>
+
       </div>
-      <p class="tab-note muted">Or just download the repo as a ZIP, extract it, and double-click <code>start.bat</code>.</p>
+      <p class="tab-note muted">Or just download the repo as a ZIP, extract it, and double-click <code>start.bat</code>.
+      </p>
     </div>
 
     <div class="tab-content" id="tab-linux">
-      <p class="tab-note">Supports <strong>apt</strong> (Ubuntu/Debian), <strong>pacman</strong> (Arch), <strong>dnf</strong> (Fedora). Python 3.12 is installed automatically if missing.</p>
+      <p class="tab-note">Supports <strong>apt</strong> (Ubuntu/Debian), <strong>pacman</strong> (Arch),
+        <strong>dnf</strong> (Fedora). Python 3.12 is installed automatically if missing.
+      </p>
       <div class="code-block">
-        <pre id="cmd-linux">git clone https://github.com/shirushimori/openxs-paper.git && cd openxs-paper && chmod +x start.sh && ./start.sh</pre>
+        <pre
+          id="cmd-linux">git clone https://github.com/shirushimori/openxs-paper.git && cd openxs-paper && chmod +x start.sh && ./start.sh</pre>
         <button class="copy-btn" data-target="cmd-linux">Copy</button>
       </div>
     </div>
 
     <div class="tab-content" id="tab-macos">
-      <p class="tab-note">Requires <strong>Homebrew</strong>. Python 3.12 is installed automatically via <code>brew install python@3.12</code>.</p>
+      <p class="tab-note">Requires <strong>Homebrew</strong>. Python 3.12 is installed automatically via
+        <code>brew install python@3.12</code>.
+      </p>
       <div class="code-block">
-        <pre id="cmd-macos">git clone https://github.com/shirushimori/openxs-paper.git && cd openxs-paper && chmod +x start.sh && ./start.sh</pre>
+        <pre
+          id="cmd-macos">git clone https://github.com/shirushimori/openxs-paper.git && cd openxs-paper && chmod +x start.sh && ./start.sh</pre>
         <button class="copy-btn" data-target="cmd-macos">Copy</button>
       </div>
     </div>
@@ -265,9 +289,12 @@ python3.12 -m venv .venv
 
   <!-- FOOTER -->
   <footer aria-label="Footer">
-    <p>OpenXS Paper by <a href="https://github.com/shirushimori" rel="author">Shirushi Mori</a> · MIT License · <a href="https://github.com/shirushimori/openxs-paper" target="_blank" rel="noopener">github.com/shirushimori/openxs-paper</a></p>
+    <p>OpenXS Paper by <a href="https://github.com/shirushimori" rel="author">Shirushi Mori</a> · MIT License · <a
+        href="https://github.com/shirushimori/openxs-paper" target="_blank"
+        rel="noopener">github.com/shirushimori/openxs-paper</a></p>
   </footer>
 
   <script src="app.js"></script>
 </body>
+
 </html>
